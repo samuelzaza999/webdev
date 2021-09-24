@@ -15,7 +15,7 @@ footer {
 
 main {
     background: #E1DCD9;
-    padding: 60px 60px 60px 200px;
+    padding: 40px 60px 60px 200px;
 }
 
 a {
@@ -61,11 +61,19 @@ ol {
     flex: 1;
 }
 
+.main-content h2 {
+    padding-bottom: 40px;
+}
+
 .main-content img {
     width: 30%;
 }
 .main-content p {
     padding-bottom: 30px;
+}
+
+#message h3{
+    padding-bottom: 20px;
 }
 
 h2 {
