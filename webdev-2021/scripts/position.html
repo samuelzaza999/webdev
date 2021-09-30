@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            width: 100px;
+            height: 10000px;
+            background-color: aquamarine;
+            position: relative;
+            top: 200px;
+            border: 1px solid red;
+        }
+        .fixed {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            position: fixed;     /*완전 고정*/
+            top: 500px;
+            bottom: 500px;
+        }
+        .sticky {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: sticky;       /*부모의 영역 벗어나지 않는다.*/
+            top: 100px;
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="wrapper">
+    <div class="fixed">fixed</div>
+    <div class="sticky">sticky</div>
+</div>
+<div style="height: 20000px"></div>
+
+</body>
+</html>

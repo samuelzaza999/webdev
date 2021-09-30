@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: row; /*가로*/
+            flex-wrap: wrap;
+        }
+        li {
+            flex: 1;    /*동일 범위*/
+            background-color: salmon;
+        }
+        li:first-child {
+            background-color: #333333;
+        }
+        li:last-child {
+            order: -1;              /*순서 변경*/
+            /*flex: 0 0 100px;    !*grow, shrink, basis*!*/
+            flex-grow: 0;           /*부모 늘어나면 늘리겠다*/
+            flex-shrink: 0;         /*클 수록 내부값 축소*/
+            flex-basis: 300px;      /*기본 사이즈*/
+            /*margin-left: auto;*/
+            background-color: #E1DCD9;
+        }
+    </style>
+</head>
+
+
+<body>
+<ul>
+    <li>license.html</li>
+    <li>shortcut.html</li>
+    <li>layout.html</li>
+</ul>
+</body>
+</html>

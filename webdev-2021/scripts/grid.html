@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 100px 500px;
+        }
+        header {
+            grid-column: span 2;
+            background-color: aquamarine;
+        }
+        /*main {*/
+        /*    grid-column: span 2;*/
+        /*}*/
+        section {
+            background-color: red;
+        }
+        aside {
+            background-color: crimson;
+        }
+        footer {
+            grid-column: span 2;
+            background-color: salmon;
+        }
+        /*ul {*/
+        /*    display: grid;*/
+        /*    grid-template-columns: repeat(3, 1fr);*/
+        /*    grid-template-rows: 100px 200px auto;*/
+        /*    grid-auto-flow: dense;*/
+        /*    grid-gap: 5px;*/
+        /*}*/
+        /*li {*/
+        /*    border: 1px solid #E1DCD9;*/
+        /*}*/
+        /*li.vertical {*/
+        /*    grid-row: span 2;       !*세로 2칸 차지*!*/
+        /*}*/
+        /*li>img {*/
+        /*    display: inline-block;  !*width, height 반영*!*/
+        /*}*/
+
+    </style>
+</head>
+
+
+<body>
+<div class="wrapper">
+    <header>
+        <h1>logo</h1>
+    </header>
+
+<!--    <main>-->
+        <section>
+            section
+        </section>
+        <aside>
+            aside
+        </aside>
+<!--    </main>-->
+
+    <footer>
+        footer
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            border: 1px solid red;
+            background-color: #333333;
+            height: 100px;
+        }
+        main {
+            background-color: #E1DCD9;
+            height: 500px;
+        }
+        main:after {
+            content: "";
+            display: table;
+            table-layout: fixed;
+            clear: both;
+        }
+        section, aside {
+            float: left;
+            height: 100%;
+        }
+        section {
+            border: 1px solid crimson;
+        }
+        aside {
+            border: 1px solid salmon;
+        }
+        footer {
+            background-color: #333333;
+            height: 100px;
+        }
+        nav ul {
+            display: table;
+        }
+        nav ul li {
+            display: table-cell;
+            padding: 10px;
+            /*list-style: none;*/
+            /*float: left;*/
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="wrapper">
+<!--    table>tr>td*5-->
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+
+    <header>
+        header
+        <nav>
+            <ul class="clearfix">
+                <li><a href="license.html">license</a></li>
+                <li><a href="shortcut.html">shortcut</a></li>
+                <li><a href="layout.html">layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        main
+    </main>
+
+    <footer>
+        footer
+    </footer>
+</div>
+</body>
+</html>
