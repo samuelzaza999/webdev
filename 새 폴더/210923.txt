@@ -1,0 +1,21 @@
+플러그인 : live edit
+이후 파일 디버그하면 새 창 뜨면서 실시간 편집 가능
+
+이미지는 상대 주소로. html이 별개 파일이면 루트는 ../images 이렇게.
+
+html validator : html 표준에 맞는지 검사.
+
+reset.css : 스타일 초기화
+@import "~.css"; : 중복 파트 포함하기
+
+git 해제 : rm -rf .git
+
+테이블 레이아웃은 안 쓴다.
+css flexbox & grid 중점 교육하기.
+
+순서 : 인라인 > id > 클래스 > 태그, !important로 강제 지정
+
+header, main, aside, section 등의 태그로 구분.
+
+과제 :
+전 과제를 웹 표준 맞게, css 영역 만들어 push하기.

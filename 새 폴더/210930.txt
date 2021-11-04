@@ -1,0 +1,11 @@
+branch :
+단편적인 작업 분기. 하루이틀, 나중에 master랑 merge하고 push.
+[ㅁㄴㅇ-5600] 지라와 연동하도록 표기?
+그 뒤로도 새로 생긴 branch에 push. 풀 리퀘스트와 리뷰. & merge ~ into master 한 뒤 마스터가 푸시.
+
+상대 길이 단위? :
+em 글꼴 비율 - 부모에게 원 사이즈 받아 배율, 자기들끼리 부모 놀이해 중복 가능 
+ex, ch, rem, lh, vw, vh, vmin, vmax
+
+css 박스 모델 :
+margin - border - padding - 내용(div)
