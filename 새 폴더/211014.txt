@@ -1,0 +1,73 @@
+시험 : 1시간동안? 15시부터.
+
+
+HTML ::
+
+닫는 태그와 여는 태그 순서 준수
+
+<html lang="ko"> : 접근성 차원
+meta 내부 og : 추출하기 쉽도록
+<body> : 실제 브라우저 내용, 대부분의 태그가 사용
+<h1~6> : 제목 강조
+p : 단락
+br : 줄 바꿈
+hr : 수평 줄, 영역 구별, 보통은 투명으로 숨김
+blockqoute : 인용문, 들여쓰기
+pre : 입력한 대로 화면에 노출
+strong : 강조
+em : 기울임, 의미 강조
+i : 텍스트 간 구분
+q : 인용구
+mark : 형광펜
+span : 줄바꿈 없이 영역 묶기
+ruby : 일본어 한자 위에 따로 적는 그거
+code : 소스코드 표시, 개발자 사이트
+cite : 웹문서에 참고 내용 표시
+kbd : 사용자 입력
+ol, li : 정렬된 리스트
+dl, dt, dd : 태그 내 용어 / 의미
+
+table, tr, td, th : 테이블의 열 / 셀 / 제목
+colspan, rowspan : 행방향 / 열방향 합치기
+caption : table 제목
+thead, tbody, tfoot : table의 의미 강조
+colgroup, col : tr/td 전, col마다 열 묶어 css 받기 쉽게.
+
+img : 이미지, alt는 빈 제목이라도.
+figure, figcaption : 사진, 그래프 증 첨부 자료 / 설명
+a herf, target : 링크 주소 / 내용 표시 위치
+iframe : 광고, 영상 등
+
+form : 사용자의 상호작용 수단. 입력창 등. GET/POST
+fieldset, legend : form 내부 그룹화 / 그룹 이름 출력
+
+label : 특정 텍스트를 라벨로 정의해 컨트롤. for의 이름이 input 내 id와 연결.
+~hidden : 보이지 않는 값 전송할 때.
+~password : 마킹 기본
+~url : 자동 validation 처리
+~number : 숫자 & 업다운 버튼
+~slide : 슬라이드 박스로 숫자 설정
+~radio/checkbox : 체크 다수 / 하나만
+~file : 파일 전송
+~submit : 입력한 요소를 서버로 전송
+
+select, option, optgroup : 직접 입력하지 않고 옵션 중 선택하도록.
+textarea : 긴 텍스트
+button : 버튼. form 안에선 submit 작용
+output : 출력 태그
+progress : 진행률 바 표시
+meter : 값을 바 표시
+
+
+next.js (과정 외) ::
+express.js/nest.js/next.js/sails로 노드 서버 구현?
+개인 서버 웹페이지 구현. localhost:3000
+
+
+시맨틱 태그 ::
+Polyfill : 하위 브라우저에서 지원 안 할 때 떼우는 요소. js로 태그 강제 생성도 가능.
+section, article, header, nav, aside 등.
+태그 만으로 영역 쉽게 구분.
+ARIA : role로 무슨 역할인지 고지.
+
+audio, video 태그로 삽입. 플래시를 대신해서.

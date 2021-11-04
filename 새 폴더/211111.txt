@@ -1,0 +1,29 @@
+진로 1순위는 공채 : 제일 쉽고 시작 연봉도 좋다. ex) 당근마켓
+보통 서버 운영이나 홈페이지 만드는 걸로 경력 이득
+
+---
+매뉴얼 반드시 읽기.
+if.kakao.com
+OLIVE 플랫폼, 리액트 등 읽어보기.
+
+flexbox layout ::
+https://d2.naver.com/helloworld/8540176
+레이아웃 1 - 스크롤 없는 100% 레이아웃
+레이아웃 2 - 내비게이션 영역
+레이아웃 3 - 브라우저 화면 아래에 붙는 푸터
+레이아웃 4 - 정렬이 다른 메뉴
+레이아웃 5 - 폼 레이블 수직 중앙 정렬
+레이아웃 6 - 중앙 정렬 아이콘
+레이아웃 7 - 유동 너비 박스
+레이아웃 8 - 말줄임과 아이콘
+레이아웃 9 - 위아래로 흐르는 목록
+레이아웃 10 - 가로세로 비율을 유지하는 반응형 박스
+
+flex 속성은 부모 요소에 반드시 적용해야.
+flex-wrap : 가로 정렬, flex 내부 줄바꿈 지원, reverse로 역행
+flex-flow : direction & row 축약.
+justify-content : row의 시작점. flow에서 row-reverse로 반대 가능.
+align-items : cross-axis 기준으로 flex-item 정렬
+>>>> order : html 코드 수정 없이 속성값 지정만으로 재정렬 가능. flex의 강점. 절댓값 기준이라 음수도 가능.
+flex-grow/shrink/basis 축약해서 작성.
+레이아웃 - column drop / mostly fluid / layout shifter / tiny whinks / off canvas

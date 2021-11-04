@@ -1,0 +1,16 @@
+CSS 애니메이션 ::
+실업무에 거의 사용X
+transform이 핵심 : 변화 과정을 위한 키 프레임
+
+transform :
+html 요소 자유롭게 변형. 이동/회전/크기/기울임 등
+가로 x 세로 y
+translate, scale, rotate, skew, metrix
+
+perspaetive-origin : 관찰자의 방향
+3차원 원근감 속성, 값 클수록 멀어진다.
+
+fancy border radius
+css animation function generater
+
+!! css 큐브 기말고사 !!
