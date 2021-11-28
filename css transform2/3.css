@@ -53,10 +53,8 @@ table {
     border-spacing: 0;
 }
 
-/*-------------------------------------------------*/
 
 :root {
-    /*디폴트 지정 : RGBA*/
     --color0: #54199440;
     --color1: #3498DB40;
     --color2: #20B2AA40;
@@ -73,29 +71,23 @@ table {
 }
 
 body {
-    /*중앙 정렬 국룰*/
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /*시점*/
     perspective: 1200px;
 }
 
 .wrapper {
     width: 300px;
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;     /*감싼 뒤 absolute로 지정하면 위치 고정*/
-
+    position: relative;
     transform-style: preserve-3d;
-    /*transition: 2s;*/
-    animation: ani 7s linear infinite;
+    animation: ani 5s linear infinite;
 
-    /*드래그 방지*/
     -ms-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -110,6 +102,7 @@ body {
         transform: rotateX(1turn) rotateY(1turn);
     }
 }
+
 /*.wrapper:hover {*/
 /*    transform: rotateX(-60deg) rotateY(60deg);*/
 /*}*/
@@ -128,13 +121,21 @@ body {
     font-weight: 800;
     letter-spacing: .2em;
 }
+.wrapper .top, .wrapper .bottom {
+    width: 300px;
+    height: 100px;
+}
+.wrapper .left, .wrapper .right {
+    /*좌우로 회전 : 행렬 위치 변화*/
+    width: 100px;
+    height: 200px;
+}
 .wrapper .top {
-    /*회전 뒤 그 방향으로 이동*/
-    transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(100px);
     background-color: var(--color1);
 }
 .wrapper .bottom {
-    transform: rotateX(-90deg) translateZ(150px);
+    transform: rotateX(-90deg) translateZ(100px);
     background-color: var(--color2);
 }
 .wrapper .left {
@@ -146,10 +147,10 @@ body {
     background-color: var(--color4);
 }
 .wrapper .front {
-    transform: translateZ(150px);
+    transform: translateZ(50px);
     background-color: var(--color5);
 }
 .wrapper .back {
-    transform: rotateY(180deg) translateZ(150px);
+    transform: rotateY(0.5turn) translateZ(50px);
     background-color: var(--color6);
 }

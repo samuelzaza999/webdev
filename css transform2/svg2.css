@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+:root {
+    --color0: #54199440;
+    --color1: #3498DB;
+    --color2: #20B2AA40;
+    --color3: #2654AA40;
+    --color4: #645AAA40;
+    --color5: #64213240;
+    --color6: #44456840;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.wrapper path {
+    stroke-dasharray: 54;
+    stroke-dashoffset: 54;
+    transition: 2s;
+    fill: var(--color0);
+    stroke-width: 1;
+}
+.wrapper path.like {
+    animation: like 1s linear forwards, heart-beat 0.5s ease-in-out 1s 2;
+    transform-origin: center;
+}
+@keyframes like {
+    0% {
+        stroke: var(--color0);
+        fill: var(--color0);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: var(--color1);
+        fill: var(--color1);
+    }
+}
+@keyframes heart-beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+}
+.wrapper path.unlike {
+    animation: unlike 1s linear forwards;
+}
+@keyframes unlike {
+    from {
+        stroke-dashoffset: 0;
+        stroke: var(--color1);
+        fill: var(--color1);
+    }
+    to {
+        stroke-dashoffset: 54;
+        stroke: var(--color0);
+        fill: var(--color0);
+    }
+}
+/*.wrapper svg:hover path {*/
+/*    stroke-dashoffset: 0;*/
+/*}*/
